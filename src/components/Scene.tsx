@@ -19,7 +19,7 @@ export default function Scene() {
       
       <NeuralFlow />
 
-      <EffectComposer disableNormalPass>
+      <EffectComposer>
         <Bloom luminanceThreshold={bloomLuminance} intensity={bloomIntensity} />
         <Noise opacity={noiseOpacity} />
         <Vignette eskil={false} offset={0.1} darkness={1.1} />
